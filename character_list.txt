@@ -1,48 +1,50 @@
-Adam Warlock
-Angela
-Black Panther
-Black Widow
-Blade
-Hulk
-Captain America
-Cloak & Dagger
-Daredevil
-Deadpool
-Doctor Strange
-Elsa Bloodstone
-Emma Frost
-Gambit
-Groot
-Hawkeye
-Hela
-Human Torch
-Invisible Woman
-Iron Fist
-Iron Man
-Jeff The Land Shark
-Loki
-Luna Snow
-Magik
-Magneto
-Mantis
-Mister Fantastic
-Moon Knight
-Namor
-Peni Parker
-Phoenix
-Psylocke
-Rocket Raccoon
-Rogue
-Scarlet Witch
-Spider-Man
-Squirrel Girl
-Star-Lord
-Storm
-The Punisher
-The Thing
-Thor
-Ultron
-Venom
-White Fox
-Winter Soldier
-Wolverine
+Adam Warlock,STRATEGIST
+Angela,VANGUARD
+Black Panther,DUELIST
+Black Widow,DUELIST
+Blade,DUELIST
+Hulk,VANGUARD
+Captain America,VANGUARD
+Cloak & Dagger,STRATEGIST
+Daredevil,DUELIST
+Deadpool,VANGUARD
+Deadpool,DUELIST
+Deadpool,STRATEGIST
+Doctor Strange,VANGUARD
+Elsa Bloodstone,DUELIST
+Emma Frost,VANGUARD
+Gambit,STRATEGIST
+Groot,VANGUARD
+Hawkeye,DUELIST
+Hela,DUELIST
+Human Torch,DUELIST
+Invisible Woman,STRATEGIST
+Iron Fist,DUELIST
+Iron Man,DUELIST
+Jeff The Land Shark,STRATEGIST
+Loki,STRATEGIST
+Luna Snow,STRATEGIST
+Magik,DUELIST
+Magneto,VANGUARD
+Mantis,STRATEGIST
+Mister Fantastic,DUELIST
+Moon Knight,DUELIST
+Namor,DUELIST
+Peni Parker,VANGUARD
+Phoenix,DUELIST
+Psylocke,DUELIST
+Rocket Raccoon,STRATEGIST
+Rogue,VANGUARD
+Scarlet Witch,DUELIST
+Spider-Man,DUELIST
+Squirrel Girl,DUELIST
+Star-Lord,DUELIST
+Storm,DUELIST
+The Punisher,DUELIST
+The Thing,VANGUARD
+Thor,VANGUARD
+Ultron,STRATEGIST
+Venom,VANGUARD
+White Fox,STRATEGIST
+Winter Soldier,DUELIST
+Wolverine,DUELIST
