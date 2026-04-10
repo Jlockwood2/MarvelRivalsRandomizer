@@ -18,5 +18,6 @@ namespace MarvelRivalsRandomizer
             character.imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "images", $"{nameRole[0].Replace(" ", "-").ToLower()}.jpg");
             characterList.Add(character);
         }
+        return characterList;
     }
 }
