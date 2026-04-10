@@ -2,19 +2,14 @@ using System;
 
 namespace MarvelRivalsRandomizer
 {
-    class Character
+    class Player
     {
         public string name
         {
             get;
             set;
         }
-        public Role role
-        {
-            get;
-            set;
-        }
-        public string imagePath
+        public Character character
         {
             get;
             set;

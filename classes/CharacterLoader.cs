@@ -15,7 +15,7 @@ namespace MarvelRivalsRandomizer
             Role charRole = Enum.Parse<Role>(nameRole[1]);
             character.name = charName;
             character.role = charRole;
-            character.imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "images", $"{nameRole[0].Replace(" ", "-").ToLower()}.jpg");
+            character.imagePath = $"images/{nameRole[0].Replace(" ", "-").ToLower()}.jpg";
             characterList.Add(character);
         }
         return characterList;
