@@ -1,41 +1,39 @@
+using MarvelRivalsRandomizer;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
 
 app.UseHttpsRedirection();
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.UseStaticFiles(); // this lets your wwwroot files be served
 
-var summaries = new[]
+app.MapPost("/randomize", (string[] playerNames) =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    // randomizer logic goes here
+    List<Player> playerList = new List<Player>(); 
+    List<Character> characterList;
+    characterList = CharacterLoader.LoadCharacters();
+        List<Character> pool = new List<Character>(characterList);
+        for(int i = 0; i < playerNames.Length; i++)
+        {   
+            int index = Random.Shared.Next(0, pool.Count);
+            Character chosen = pool[index];
+            Player player = new Player();
+            player.name = playerNames[i];
+            player.character = chosen;
+            playerList.Add(player);
+            pool.Remove(chosen);
+        }
+    return playerList;
+});
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

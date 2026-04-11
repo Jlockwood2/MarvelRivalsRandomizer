@@ -2,7 +2,7 @@ using System;
 
 namespace MarvelRivalsRandomizer
 {
-    class rivals_randomizer
+    public class rivals_randomizer
     {
         static int numPlayers;
         static List<Player> playerList; 

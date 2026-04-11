@@ -2,7 +2,7 @@ using System;
 
 namespace MarvelRivalsRandomizer
 {
-    class Character
+    public class Character
     {
         public string name
         {
